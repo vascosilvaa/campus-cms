@@ -2,9 +2,11 @@
 
 First proposal solution for the CMS mechanism that will be implemented on Campus/Collab.
 
+Demo: https://campus-cms.vercel.app/
+
 ## How to use it
 
-To create a page, access **_/editor_** page. Add some components and configure it's styles (size, padding, colors, ...). After that, click on **save**
+To create a page, access [editor page](https://campus-cms.vercel.app/editor) page. Add some components and configure it's styles (size, padding, colors, ...). Click on **Finish editing** and **Export Page**. It will copy a compressed JSON object to your clipboard. After that, access [loader page](https://campus-cms.vercel.app/loader) and load your content.
 
 ## Documentation
 
