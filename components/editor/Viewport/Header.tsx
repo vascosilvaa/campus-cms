@@ -65,13 +65,6 @@ export const Header = () => {
   const [snackbarMessage, setSnackbarMessage] = useState<string>();
   const [compressedPage, setCompressedPage] = useState<string>();
 
-  const snackBarAction = (
-    <Link href={`/loader?page=${compressedPage}`}>
-      <Button color="secondary" size="small">
-        Preview on loader page
-      </Button>
-    </Link>
-  );
   return (
     <>
       <HeaderDiv className="w-full text-white transition header">
@@ -137,7 +130,7 @@ export const Header = () => {
         open={!!snackbarMessage}
         onClose={() => setSnackbarMessage(null)}
         message={<span>{snackbarMessage}</span>}
-        action={snackBarAction}
+        // action={snackBarAction}
       />
     </>
   );

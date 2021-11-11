@@ -1,6 +1,5 @@
 import { useEditor } from "@craftjs/core";
 import React from "react";
-import { Button as MaterialButton, Snackbar } from "@material-ui/core";
 
 export * from "./ToolbarItem";
 export * from "./ToolbarSection";
