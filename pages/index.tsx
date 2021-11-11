@@ -17,7 +17,13 @@ function App() {
       <Box py={2}>
         <Typography>
           Check documentation at{" "}
-          <MaterialLink href="">README file</MaterialLink>.
+          <MaterialLink
+            href="https://github.com/vascosilvaa/campus-cms"
+            target="_blank"
+          >
+            README file
+          </MaterialLink>
+          .
         </Typography>
       </Box>
 
