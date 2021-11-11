@@ -144,7 +144,7 @@ const Loader = () => {
           Button,
           Video,
         }}
-        enabled
+        enabled={false}
       >
         <LoaderTopbar loadPage={setCompressedJson} />
         {compressedJson && <LoaderContent compressedJson={compressedJson} />}
