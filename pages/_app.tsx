@@ -1,5 +1,4 @@
 import React from "react";
-import Router from "next/router";
 import "../styles/app.css";
 
 const Noop = ({ children }) => children;
