@@ -12,6 +12,7 @@ import {
   Video,
   Link,
   Button,
+  Card,
 } from "components/selectors";
 
 const ToolboxDiv = styled.div<{ enabled: boolean }>`
@@ -128,6 +129,13 @@ export const Toolbox = () => {
           <Tooltip title="Button" placement="right">
             <Item className="block pb-2 m-2 cursor-pointer" move>
               Button
+            </Item>
+          </Tooltip>
+        </div>
+        <div ref={(ref) => create(ref, <Card />)}>
+          <Tooltip title="Card" placement="right">
+            <Item className="block pb-2 m-2 cursor-pointer" move>
+              Card
             </Item>
           </Tooltip>
         </div>
