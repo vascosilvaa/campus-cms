@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNode, useEditor } from "@craftjs/core";
 import settings from "./settings";
 import { commonProps, CommonProps } from "../Common/common";
@@ -27,6 +27,9 @@ const defaultProps: CardProps = {
 };
 
 export const Card = (props: Partial<CardProps>) => {
+  useEffect(() => {
+    console.log("component mounted");
+  }, []);
   const { margin, width, title, body, subtitle, button } = {
     ...defaultProps,
     ...props,
@@ -85,7 +88,7 @@ export const Card = (props: Partial<CardProps>) => {
             enabled ? undefined : window.open(button.href, "_blank")
           }
         >
-          {button.text}
+          {button.text} {Math.random()}
         </button>
       </div>
     </CommonWrapper>

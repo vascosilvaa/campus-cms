@@ -14,6 +14,7 @@ import {
   Video,
   Link,
   Button,
+  TextEditor,
 } from "components/selectors";
 
 function Editor() {
@@ -31,6 +32,7 @@ function Editor() {
         Video,
         Link,
         Button,
+        TextEditor,
       }}
       enabled={true}
       onRender={RenderNode}
@@ -40,7 +42,7 @@ function Editor() {
           <Element
             canvas
             is={Container}
-            width="800px"
+            width="100%"
             height="auto"
             background={{ r: 255, g: 255, b: 255, a: 1 }}
             padding={["40", "40", "40", "40"]}

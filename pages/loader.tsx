@@ -25,6 +25,7 @@ import {
   Video,
   Link,
   Button,
+  TextEditor,
 } from "../components/selectors";
 import Layout from "components/layout";
 
@@ -151,6 +152,7 @@ const Loader = () => {
           Video,
           Link,
           Button,
+          TextEditor,
         }}
         enabled={false}
       >

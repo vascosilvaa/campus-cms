@@ -13,6 +13,7 @@ import {
   Link,
   Button,
   Card,
+  TextEditor,
 } from "components/selectors";
 
 const ToolboxDiv = styled.div<{ enabled: boolean }>`
@@ -136,6 +137,14 @@ export const Toolbox = () => {
           <Tooltip title="Card" placement="right">
             <Item className="block pb-2 m-2 cursor-pointer" move>
               Card
+            </Item>
+          </Tooltip>
+        </div>
+
+        <div ref={(ref) => create(ref, <TextEditor />)}>
+          <Tooltip title="Text editor" placement="right">
+            <Item className="block pb-2 m-2 cursor-pointer" move>
+              Text editor
             </Item>
           </Tooltip>
         </div>

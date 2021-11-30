@@ -8,3 +8,4 @@ export * from "./Video";
 export * from "./Link";
 export * from "./Button";
 export * from "./Card";
+export * from "./TextEditor";
